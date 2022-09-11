@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
 /* header */
 header {
   height: 50px;
@@ -44,9 +49,17 @@ header {
 
 .col-logo {
   width: calc(100% / 5);
-  border: 1px dashed black;
-  background-color: orange;
-  text-align: start;
+  /* background-color: orange; */
+  align-items: center;
+}
+img {
+  max-width: 100%;
+}
+.img-logo {
+  display: flex;
+  align-items: center;
+  width: 6em;
+  height: 3em;
 }
 
 .col-login {
@@ -77,6 +90,9 @@ header {
 /* /header */
 
 /* main */
+main section {
+  padding: 3rem 0;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -85,7 +101,6 @@ header {
 }
 
 .container-pink {
-  /* background-color: palevioletred; */
   height: 300px;
   width: 70%;
   margin: auto;
@@ -110,94 +125,181 @@ header {
 
 .container-white-img {
   width: 60%;
-  background-color: lightblue;
+  background-image: url(./img/item1.svg);
+  background-position: center;
+  background-size: cover;
   height: 350px;
 }
 
 .container-white-text {
   width: 40%;
-  background-color: lightpink;
   height: 350px;
+  padding: 1rem;
+  text-align: start;
+  font-size: large;
+}
+
+.p {
+  margin-top: 5rem;
 }
 
 .section-grey-1 {
   background-color: lightgray;
 }
 
+.container-grey-text {
+  width: 40%;
+  height: 350px;
+  padding: 1rem;
+  text-align: start;
+  font-size: large;
+}
+
+.container-grey-img {
+  width: 60%;
+  background-image: url(./img/item2.svg);
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.wave {
+  opacity: 0.18;
+  display: block;
+}
+
+.wave-reverse {
+  transform: rotateX(180deg);
+}
 .section-grey-2 {
   background-color: lightgray;
-  height: 600px;
+  height: 60em;
   display: flex;
-  align-items: center;
+  text-align: center;
+  /* padding: 5rem; */
+  /* margin-bottom: 20rem; */
 }
 
 .container-green {
-  background-color: green;
-  height: 500px;
+  height: 400px;
   width: 80%;
-  margin: auto;
+  text-align: center;
+  align-items: center;
+  margin-left: 8rem;
 }
-
-section {
-  padding: 40px 0;
+.text-big-section {
+  text-align: center;
+  align-content: center;
+  margin-bottom: 2rem;
+}
+.bg-stars {
+  width: 50%;
+  margin: 2em auto 0px;
+  padding: 1.5em 0px;
+  background-image: url("../img/stars.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.btn-violet {
+  background-color: rgb(130, 148, 238);
+  padding: 1em;
+  border-radius: 2em;
+  color: white;
+  text-decoration: none;
 }
 /* /main */
 
 /* footer */
 footer {
-  background-color: rgb(43, 44, 42);
+  padding: 3em 0px 4em;
+  background-color: #23272a;
+  color: white;
+}
+
+.txt-violet {
+  color: #7289da;
+  margin-bottom: 1em;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+.ft-flex {
+  display: flex;
 }
 
 .ft-top {
-  height: 400px;
+  /* height: 400px;
   display: flex;
   width: 80%;
   padding-top: 5px;
   margin-bottom: 15px;
-  margin: auto;
+  margin: auto; */
 }
 
 .ft-social {
   width: 30%;
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
   height: 300px;
-  border: black dashed;
+  /* border: black dashed; */
   display: flex;
+  flex-direction: column;
+  padding-left: 3em;
+}
+.img-it {
+  width: 1.5em;
+}
+.language {
+  color: white;
+  text-decoration: none;
 }
 
+.socials {
+  display: inline;
+  justify-content: flex-start;
+}
 .ft-menu-box {
   width: 70%;
-  background-color: lightseagreen;
+  /* background-color: lightseagreen; */
   height: 300px;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  /* flex-direction: row; */
+  /* margin-left: 2em; */
 }
 .ft-menu-col {
-  border: 1px dashed white;
+  justify-content: space-between;
+  /* border: 1px dashed white; */
   height: 300px;
   width: 25%;
   padding-bottom: 20px;
 }
+li {
+  list-style: none;
+}
 
+/* footer-bottom */
 .ft-bottom {
-  padding-top: 10px;
+  padding-top: 1em;
+}
+
+.img-logo-down {
+  /* background-color: #23272a; */
+  /* padding: 1em; */
+  height: 3em;
+  width: 6em;
 }
 
 .ft-bottom-content {
-  background-color: aquamarine;
-  height: 50px;
+  /* background-color: aquamarine;
+  height: 50px; */
   display: flex;
   margin: auto;
   width: 80%;
   justify-content: space-between;
   align-items: center;
 }
-
-.button {
-  background-color: pink;
-  border: black dashed;
-  text-decoration: none;
+.hr {
+  background-color: #7289da;
 }
 
 /* /footer */
